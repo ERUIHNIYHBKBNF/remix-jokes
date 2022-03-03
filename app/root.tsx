@@ -30,6 +30,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <title>Remix: So great, it's chino!</title>
+        {/* Links放其它组件export的LinksFunction返回的links */}
         <Links/>
       </head>
       <body>
