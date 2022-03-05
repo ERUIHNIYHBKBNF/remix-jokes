@@ -10,6 +10,12 @@ From your terminal:
 npm run dev
 ```
 
+顺带用了sass，要修改的话
+
+```sh
+npm run sass
+```
+
 This starts your app in development mode, rebuilding assets on file changes.
 
 ## Deployment
