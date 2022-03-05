@@ -8,14 +8,15 @@ type LoaderData = { randomJoke: Joke };
 // 随机获取一个joke
 export const loader: LoaderFunction = async () => {
   const count = await db.joke.count();
-  const randomId = Math.floor(Math.random() * count);
+  const num = Math.floor(Math.random() * count);
   const [randomJoke] = await db.joke.findMany({
     take: 1,
-    skip: randomId,
+    skip: num,
   });
   const data: LoaderData = { randomJoke };
   return data;
 }
+
 export default function JokesIndexRoute() {
   const data = useLoaderData<LoaderData>();
   return (

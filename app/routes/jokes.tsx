@@ -1,5 +1,6 @@
 /*
 export一个LoaderFunction函数在渲染之前获取数据
+**服务端获取数据，返回一个response**
 Each route can define a "loader" function that will be called on the server
 before rendering to provide data to the route.
 
